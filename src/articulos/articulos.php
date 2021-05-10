@@ -36,8 +36,8 @@
 <?php
 
 
-require_once '../php/header.php';
-require_once '../php/menu.php';
+
+require_once './php/menu.php';
 
 ?>
 <body>
@@ -118,7 +118,7 @@ require_once '../php/menu.php';
         
         <?php
          
-          require '../php/conexion.php';
+          require './php/conexion.php';
 
           //CONSULTA DE ARTICULOS
           $consulta="SELECT * FROM art";
@@ -230,8 +230,8 @@ require_once '../php/menu.php';
 
 
 <?php
-require_once '../php/excel.php';  
-require_once '../php/footer.php';
+require_once './php/excel.php';  
+require_once './php/footer.php';
 
 ?>
 

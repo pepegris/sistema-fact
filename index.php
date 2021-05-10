@@ -1,89 +1,76 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-     <!-- Estilos personal CSS -->
-     <link rel="stylesheet" href="css/materialize/css/materialize.min.css">
-     <link rel="stylesheet" href="../sistema/css/login/animations.css">
-     <link rel="stylesheet" href="../sistema/css/login/a_estilo.css" >
-  
-     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-  </head>
-  <style>
-  body {
-    background-image: url('./img/thumb-1920-3827.jpg');
-    background-size: cover;
-  }
-  .derecha{
-    background-image: url('./img/thumb-1920-373.jpg');
-    background-size: cover;
-  }
-
-  </style>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/login/estilo.css">
+  <title>Login</title>
+</head>
 <body>
-    <form class="slideUp" method="POST" action="auntenticando.php">
-    <div id="login"class="z-depth-5"  >
-            <div id="sistema" >
-                <h2>Jorinacha</h2>
-                <div class="row">
-                    <div class="col s12">
-                      <div class="row">
-                        <div class="input-field col s12">
-                          
-                          <input type="text" id="autocomplete-input" name="user" class="autocomplete">
-                          <label for="autocomplete-input">Usuario</label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
 
-                  <div class="row">
-                    <div class="col s12">
-                      <div class="row">
-                        <div class="input-field col s12">
-                          
-                          <input type="password" name="pass" id="autocomplete-input" class="autocomplete">
-                          <label for="autocomplete-input" >Contraseña</label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                <button type="submit" class="btn ">Entrar</button>
-                <br>
-               <!--  <a href="../resumen.php" class="btn blue darken-1 ">Ver Resumen Diario</a>
-                <a href="../monitoreo_remotos/usuarios_remotos.php" class="btn blue darken-1">Usuarios Conectado</a> -->
-            </div>
-
-            
-           <div class="derecha">
-                <div id="invitado">
-                    <h4>Ver Resumen Diario</h4>
-                  
-                    
-                   </div>
-                </div>
-            </div>
- 
-        
-            
-            </div>
-    </form>
-
-
-        
-
-    </div>
-    
-    
-
-    <script src="css/materialize/js/materialize.min.js"></script>
-
-  </body>
+<div class="overlay">
+<!-- LOGN IN FORM by Omar Dsoky -->
+<form>
+   <!--   con = Container  for items in the form-->
+   <div class="con">
+   <!--     Start  header Content  -->
+   <header class="head-form">
+      <h2>Log In</h2>
+      <!--     A welcome message or an explanation of the login form -->
+      <p>login here using your username and password</p>
+   </header>
+   <!--     End  header Content  -->
+   <br>
+   <div class="field-set">
+     
+      <!--   user name -->
+         <span class="input-item">
+           <i class="fa fa-user-circle"></i>
+         </span>
+        <!--   user name Input-->
+         <input class="form-input" id="txt-input" type="text" placeholder="@UserName" required>
+     
+      <br>
+     
+           <!--   Password -->
+     
+      <span class="input-item">
+        <i class="fa fa-key"></i>
+       </span>
+      <!--   Password Input-->
+      <input class="form-input" type="password" placeholder="Password" id="pwd"  name="password" required>
+     
+<!--      Show/hide password  -->
+     <span>
+        <i class="fa fa-eye" aria-hidden="true"  type="button" id="eye"></i>
+     </span>
+     
+     
+      <br>
+<!--        buttons -->
+<!--      button LogIn -->
+      <button class="log-in"> Log In </button>
+   </div>
+  
+<!--   other buttons -->
+   <div class="other">
+<!--      Forgot Password button-->
+      <button class="btn submits frgt-pass">Forgot Password</button>
+<!--     Sign Up button -->
+      <button class="btn submits sign-up">Sign Up 
+<!--         Sign Up font icon -->
+      <i class="fa fa-user-plus" aria-hidden="true"></i>
+      </button>
+<!--      End Other the Division -->
+   </div>
+     
+<!--   End Conrainer  -->
+  </div>
+  
+  <!-- End Form -->
+</form>
+</div>
+  <script src="js/login.js"></script>
+</body>
 </html>
-

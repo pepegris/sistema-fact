@@ -9,7 +9,7 @@
 </head>
 
 <?php
-include 'src/php/loading.php';
+include 'php/loading.php';
 
 
 
@@ -22,7 +22,7 @@ include 'src/php/loading.php';
     
     if ($usuario == 'sistema' && $clave == 'sistema123' ) {
 
-        header('refresh:5;url=  src/articulos/articulos.php');
+        header('refresh:5;url=  inicio.php');
 
     //    header('refresh:5;url= inicio.php');
         exit;

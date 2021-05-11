@@ -25,11 +25,20 @@
         width: 42%;
     }
     form button {
+
         margin: 5px 0 5px 0;
+
     }
     form .form-group{
+
       margin-top:5px;
+
+    } table td {
+
+      color:black;
+      
     }
+   
  
    
     
@@ -80,7 +89,7 @@ require_once 'php/menu.php';
    
       <table class="table table-bordered table-hover" id="tblData">
         <thead >
-          <tr class="table-primary">
+          <tr class="table-secondary">
             
             <td>Name</td>
             <td>CI</td>

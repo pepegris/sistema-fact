@@ -60,7 +60,7 @@ require_once 'php/menu.php';
             ?>
 <center>
         <div class="card text-black mb-3" id="inf-empresa" >
-            <div class="card-header">Datos de la empresa</div>
+            <div class="card-header" style="color:white;" >Datos de la empresa</div>
             <div class="card-body">
             <h3 class="card-title"><?php echo "$empresa" ?></h3>
             
@@ -73,16 +73,16 @@ require_once 'php/menu.php';
             <p>Bs <?php echo "$tasa" ?></p>
             
             <form action="cambiar_tasa.php" method="post">
-                <input type="number" name="tasa_dia" class="form"  value='<?php echo "$tasa_dia" ?>' id="">
-                <input type="submit" class="btn btn-primary" value="Cambiar Tasa">
+                <input type="number" name="tasa_dia" class="form" style="width: 110px;"  value='<?php echo "$tasa_dia" ?>' id="">
+                <input type="submit" class="btn btn-secondary" value="Cambiar Tasa">
             </form>
             <br>
             <form action="cambiar_tasa.php" method="post">
-                <input type="number" name="tasa_dia" class="form"  value='<?php echo "$iva" ?>' id="">
-                <input type="submit" class="btn btn-primary" value="Cambiar Iva   ">
+                <input type="number" name="iva" class="form" style="width: 110px;" value='<?php echo "$iva" ?>' id="">
+                <input type="submit" class="btn btn-secondary" value="Cambiar Iva   ">
             </form>
             <hr>
-            <a href="edit_datos.php" class="btn btn-primary">Cambiar datos de la empresa</a>
+            <a href="edit_datos.php" class="btn btn-secondary">Cambiar datos de la empresa</a>
         </div>
         </center>  
             
@@ -97,9 +97,6 @@ require_once 'php/menu.php';
     
     
     </div>
-
-
-
 
 
 

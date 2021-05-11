@@ -29,7 +29,7 @@ CREATE TABLE configuracion (
 );
 
 
-INSERT INTO  configuracion VALUES (0,'innopiel skincare','j-9999-1','trabajo',0212575595,'mercedes',16,3000000);
+INSERT INTO  configuracion VALUES (0,'NOMBRE DE LA EMRPESA','j-99999-1','trabajo','+58 0412-2027622','Venezuela',16,3000000);
 
 CREATE TABLE clientes (
   id INT UNSIGNED AUTO_INCREMENT NOT NULL PRIMARY KEY,
@@ -43,6 +43,23 @@ CREATE TABLE clientes (
   fecha datetime NOT NULL DEFAULT CURRENT_TIMESTAMP 
 );
 
+-- FACTURA
+CREATE TABLE facturas(
+  id INT UNSIGNED AUTO_INCREMENT NOT NULL PRIMARY KEY,
+  fac_des VARCHAR(255) NOT NULL,
+  total_bruto INT NOT NULL,
+  total_neto INT NOT NULL,
+  total_iva INT NOT NULL,
+  fecha datetime NOT NULL DEFAULT CURRENT_TIMESTAMP 
+);
+
+CREATE TABLE reng_fact(
+  id INT UNSIGNED AUTO_INCREMENT NOT NULL PRIMARY KEY,
+  reng_art VARCHAR(255) NOT NULL,
+  precio_art INT NOT NULL,
+  fecha datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   FOREIGN KEY(id) REFERENCES facturas(id)
+)
 
 
 

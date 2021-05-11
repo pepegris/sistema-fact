@@ -28,6 +28,9 @@
     form .form-group{
       margin-top:5px;
     }
+    table td {
+      color:black;
+    }
    
     
 </style>
@@ -101,7 +104,7 @@ require_once 'php/menu.php';
    
       <table class="table table-bordered table-hover" id="tblData">
         <thead >
-          <tr class="table-primary">
+          <tr class="table-secondary">
             
             <td>Descripción</td>
             <td>Código</td>

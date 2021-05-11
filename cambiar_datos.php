@@ -7,14 +7,14 @@ if (isset($_POST)) {
 
   //  var_dump($_POST);
     $empresa=isset($_POST ['empresa']) ? mysqli_real_escape_string($conn,$_POST['empresa']):false ;
-    $rif=isset ($_POST ['rif']) ? mysqli_real_escape_string($conn,$_POST ['rif'] ): false ;
+    $rif=isset($_POST ['rif']) ? mysqli_real_escape_string($conn,trim($_POST ['rif'])) :false;
     $razon_social=isset($_POST ['razon_social']) ? mysqli_real_escape_string($conn,$_POST ['razon_social']) : false;
-    $numero=isset($_POST ['numero']) ? mysqli_real_escape_string($conn,trim($_POST ['numero'])) :false;
+    $numero=isset($_POST ['numero']) ? mysqli_real_escape_string($conn,$_POST ['numero']) :false;
     $direcion=isset($_POST ['direcion']) ? mysqli_real_escape_string($conn,$_POST ['direcion']) : false;
 
     
     if ($conn) {
-        $sql= "UPDATE configuracion SET empresa='$empresa',rif='$rif',razon_social='$razon_social',numero=$numero,direcion='$direcion' WHERE ref =0 ";
+        $sql= "UPDATE configuracion SET empresa='$empresa',rif='$rif',razon_social='$razon_social',numero='$numero',direcion='$direcion' WHERE ref =0 ";
  
         $guardar = mysqli_query($conn,$sql);
 

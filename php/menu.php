@@ -43,7 +43,7 @@
       </li>
 
       <li id="nav-item" class="nav-item">
-        <a href="index.html" id="nav-link" class="nav-link">
+        <a href="factura.php" id="nav-link" class="nav-link">
         <svg
             aria-hidden="true"
             focusable="false"
@@ -68,6 +68,35 @@
             </g>
           </svg>
           <span class="link-text">Factura</span>
+        </a>
+      </li>
+
+      <li id="nav-item" class="nav-item">
+        <a href="factura.php" id="nav-link" class="nav-link">
+        <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fad"
+            data-icon="angle-double-right"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x"
+          >
+            <g class="fa-group">
+              <path
+                fill="currentColor"
+                d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z"
+                class="fa-secondary"
+              ></path>
+              <path
+                fill="currentColor"
+                d="M415.89 273L280.34 409a23.77 23.77 0 0 1-33.79 0L224 386.26a23.94 23.94 0 0 1 0-33.89L320.11 256l-96-96.47a23.94 23.94 0 0 1 0-33.89l22.52-22.59a23.77 23.77 0 0 1 33.79 0L416 239a24 24 0 0 1-.11 34z"
+                class="fa-primary"
+              ></path>
+            </g>
+          </svg>
+          <span id="link-text" class="link-text">Todas las facturas</span>
         </a>
       </li>
 
@@ -101,7 +130,7 @@
       </li>
 
       <li id="nav-item" class="nav-item">
-        <a href="clientes.php" id="nav-link" class="nav-link">
+        <a href="clientes_registrados.php" id="nav-link" class="nav-link">
         <svg
             aria-hidden="true"
             focusable="false"
@@ -130,7 +159,7 @@
       </li>
 
       <li id="nav-item" class="nav-item">
-        <a href="articulo.php" id="nav-link" class="nav-link">
+        <a href="clientes.php" id="nav-link" class="nav-link">
         <svg
             aria-hidden="true"
             focusable="false"
@@ -154,36 +183,7 @@
               ></path>
             </g>
           </svg>
-          <span id="link-text" class="link-text">beta</span>
-        </a>
-      </li>
-
-      <li id="nav-item" class="nav-item">
-        <a href="/php/LoginJorinacha/autentica.php" id="nav-link" class="nav-link">
-        <svg
-            aria-hidden="true"
-            focusable="false"
-            data-prefix="fad"
-            data-icon="angle-double-right"
-            role="img"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 448 512"
-            class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x"
-          >
-            <g class="fa-group">
-              <path
-                fill="currentColor"
-                d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z"
-                class="fa-secondary"
-              ></path>
-              <path
-                fill="currentColor"
-                d="M415.89 273L280.34 409a23.77 23.77 0 0 1-33.79 0L224 386.26a23.94 23.94 0 0 1 0-33.89L320.11 256l-96-96.47a23.94 23.94 0 0 1 0-33.89l22.52-22.59a23.77 23.77 0 0 1 33.79 0L416 239a24 24 0 0 1-.11 34z"
-                class="fa-primary"
-              ></path>
-            </g>
-          </svg>
-          <span id="link-text" class="link-text">Salir</span>
+          <span id="link-text" class="link-text">Nuevo Clientes</span>
         </a>
       </li>
 

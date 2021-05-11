@@ -35,7 +35,7 @@ require_once 'php/menu.php';
  
   <table class="table table-bordered table-hover" id="tblData" >
         <thead style="background-color: black;">
-          <tr class="table-primary">
+          <tr class="table-secondary">
             <td>n°</td>
             <td>Descripción</td>
             <td>Código</td>

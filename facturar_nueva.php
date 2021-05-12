@@ -100,9 +100,27 @@ require 'php/empresa.php';
 		</tr>
 	</thead>
 	<tbody>
+	
 		<tr>
 			<td style="text-align: center;">1</td>
-			<td><a href="#"> Asesoramiento de inseminaci&oacute;n vacuna </a></td>
+
+			<td><select name="" id="">
+			<?PHP 
+
+			$consulta="SELECT * FROM art";
+
+			$empresa=mysqli_query($conn,$consulta);
+    		
+			while ($datos=mysqli_fetch_assoc($empresa)) {
+				$art_des=$datos['art_des'];
+				
+				
+				
+			?>
+			<option value='<?php echo "$art_des"; ?>'><?php echo "$art_des"; ?></option>
+			<?php }?>
+			</select></td>
+			
 			<td class=" text-right ">28500</td>
 			<td class=" text-right ">28500</td>
 			

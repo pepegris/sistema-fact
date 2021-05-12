@@ -43,7 +43,7 @@
       </li>
 
       <li id="nav-item" class="nav-item">
-        <a href="factura.php" id="nav-link" class="nav-link">
+        <a href="facturar_nueva.php" id="nav-link" class="nav-link">
         <svg
             aria-hidden="true"
             focusable="false"

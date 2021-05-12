@@ -3,7 +3,7 @@
 	if (isset($_POST)) {
 		
 		require 'php/conexion.php';
-		
+		require 'php/empresa.php';
 		$nombre=$_POST['nombre'];
 
 		if ($conn) {
@@ -38,7 +38,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Pedido</title>
-	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/factura/bootstrap.css" rel="stylesheet" />
 	<style>@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
   			body, h1, h2, h3, h4, h5, h6{
     			font-family: 'Bree Serif', serif;
